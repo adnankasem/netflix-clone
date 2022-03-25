@@ -1,0 +1,11 @@
+.box {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.iconLink {
+    margin-right: 1rem;
+}

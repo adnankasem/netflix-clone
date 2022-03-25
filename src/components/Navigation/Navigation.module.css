@@ -1,0 +1,44 @@
+.navigation {
+    background-color: #141414;
+    color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* margin: 0 40px; */
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+.logo {
+    max-width: 92px;
+    height: fit-content;
+}
+
+.mainNavigation{
+    display: flex;
+}
+
+.navigationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  
+}
+
+.navigationItem {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+
+.navigationItem a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
