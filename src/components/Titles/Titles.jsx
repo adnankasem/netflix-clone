@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Titles.module.css';
 import Segment from '../Segment';
 
-const Titles = ({category, comedy, action, documentaries, family, scifi}) => {
+const Titles = ({comedy, action, documentaries, family, scifi}) => {
     return (
         <div className={styles.titles}>
            <Segment category={action} title='Popular on Netflix' />

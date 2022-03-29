@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './Segment.module.css'
-import placeHolderImg from './assets/thumbnail-top10-h.jpg';
 import { ChevronRightIcon } from './ChecvronRightIcon';
 
 export const Segment = ({category, title}) => {
@@ -25,12 +24,6 @@ export const Segment = ({category, title}) => {
                         )  
                     })
                 }
-                {/* <img src={placeHolderImg} alt="" />
-                <img src={placeHolderImg} alt="" />
-                <img src={placeHolderImg} alt="" />
-                <img src={placeHolderImg} alt="" />
-                <img src={placeHolderImg} alt="" />
-                <img src={placeHolderImg} alt="" /> */}
             </div>
 
             <button className={styles.button}>
