@@ -23,8 +23,8 @@ const FooterLinks = () => {
     return (
         <div className={styles.box}>
             <ul className={styles.linkList}>
-            {links.map(link => {
-                return <li className={styles.link}><a href="/">{link}</a></li>
+            {links.map((link, index) => {
+                return <li key={index} className={styles.link}><a href="/">{link}</a></li>
             })}
             </ul>
            

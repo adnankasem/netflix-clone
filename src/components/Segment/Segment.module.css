@@ -25,6 +25,28 @@
 .row img {
     margin-right: .5rem;
     border-radius: 4px;
+    color: blue;
+
+}
+
+.movie {
+    position: relative;
+    text-align: center;
+    color: white;
+
+
+}
+
+.movie p {
+    position: absolute;
+  bottom: 8px;
+  left: 16px;
+
+  text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
 }
 
 .button {
