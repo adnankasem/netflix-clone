@@ -3,7 +3,7 @@ import styles from './Segment.module.css'
 import placeHolderImg from './assets/thumbnail-top10-h.jpg';
 import { ChevronRightIcon } from './ChecvronRightIcon';
 
-export const Segment = ({title}) => {
+export const Segment = ({category, title}) => {
     return (
         <div className={styles.segment}>
             <p className={styles.title}>{title}
@@ -14,12 +14,23 @@ export const Segment = ({title}) => {
                 </span>
             </p>
             <div className={styles.row}>
+            
+                {
+                    category.filter(item => item.backdrop_path).map(item => {
+                        return (
+                            <div key={item.id} className={styles.movie}>
+                                <img src={`https://image.tmdb.org/t/p/w300/${item.backdrop_path}`} alt="item.title" />
+                                <p>{item.title}</p>
+                            </div>
+                        )  
+                    })
+                }
+                {/* <img src={placeHolderImg} alt="" />
                 <img src={placeHolderImg} alt="" />
                 <img src={placeHolderImg} alt="" />
                 <img src={placeHolderImg} alt="" />
                 <img src={placeHolderImg} alt="" />
-                <img src={placeHolderImg} alt="" />
-                <img src={placeHolderImg} alt="" />
+                <img src={placeHolderImg} alt="" /> */}
             </div>
 
             <button className={styles.button}>
