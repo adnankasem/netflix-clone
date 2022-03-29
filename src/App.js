@@ -4,8 +4,7 @@ import Billboard from './components/Billboard';
 import Titles from './components/Titles';
 import Footer from './components/Footer';
 import './normalize.css'
-import { useEffect } from 'react/cjs/react.development';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const [comedy, setComedy] = useState([])
